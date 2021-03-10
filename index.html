@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <title>(S)CSS Masterclass</title>
+    <script src="main.js">
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul onclick="toggleNav()" class="dropbtn">
+          <li>zoo</li>
+          <li>contact</li>
+          <li>team</li>
+          <li>client</li>         
+          <div id="myDropdown" class="dropdown-content">
+            <div onclick="closeBtn()" class="menu-close">&#10005</div>
+            <div class="menu-penel">
+              <section class="menu">
+                <h3>zoo</h3>
+                <div>Zoo is a Paris-based graphic design studio founded in 2013 
+                  by Baptiste de l’Espinay, Julie Galand and Valentine Thébaut. 
+                  We specialize in print design (publishing, layout, identity, etc.), 
+                  web design (website, interface, motion design, etc.) and 
+                  signage (sign, museography, etc.). We believe in strength of plain 
+                  ideas and in necessity of a clear language. Each project is an adventure 
+                  with new issues, driven by the care of functionality and aesthetic.
+                  Feel free to contact us, it will be a pleasure to meet you.
+                </div>
+              </section>
+              <section class="menu">
+                <h3>team</h3>
+                <div class="team-text">
+                  <span>Baptiste de l’Espinay (founding partner)</span>
+                  <span>Julie Galand (founding partner)</span>
+                  <span>Valentine Thébaut (founding partner)</span>
+                  <span>Marine Stephan (designer)</span>
+                </div>
+              </section>
+              <section class="menu">
+                <h3>contact</h3>
+                <div>
+                  <span>9 rue richard lenoir</span>
+                  <span>75011 Paris</span>
+                  <span>+33 (0) 1 43 48 45 54</span>
+                  <span>contact@z-o-o.fr</span>
+                </div>
+                <div>
+                  <a href="#">Facebook</a>
+                  <a href="#">Instragram</a>
+                </div>
+              </section>
+              <section class="menu">
+                <h3>clients</h3>
+                <section class="first-column">
+                  <div class="art">
+                    <h4>ART & CULTURE</h4>                    
+                      <span>Centre Pompidou</span>
+                      <span>Fondation Louis Vuitton</span>
+                      <span>Château de Versailles</span>
+                      <span>Ministère de la culture et de la communication</span>
+                      <span>Musée des Arts et Métiers</span>
+                      <span>Paris Musées</span>
+                      <span>Musées de Strasbourg</span>
+                      <span>Moscow-Gallery</span>
+                      <span>Musée d’Angers</span>
+                      <span>Musée des Impressionnismes Giverny</span>
+                      <span>MOCO Montpellier Contemporain</span>
+                      <span>Villa Arson Nice</span>
+                      <span>Musée du quai Branly</span>
+                      <span>Fondation groupe EDF</span>
+                      <span>Musée national de la Renaissance</span>                    
+                  </div>
+                  <div class="fashion">
+                    <h4>fashion&luxe</h4>
+                    <span>LVMH</span>
+                    <span>l’Oréal</span>
+                    <span>Swatch</span>
+                    <span>Celio</span>
+                    <span>Laurence Airline</span>
+                    <span>L’Officie</span>
+                  </div>
+                  <div class="communi">
+                    <h4>COMMUNICATION/CONSULTING</h4>
+                    <span>Havas (W&cie)</span>
+                    <span>Publicis (Zenith Optimedia)</span>
+                    <span>TBWA (Ici Barbès)</span>
+                    <span>Choregraphy</span>
+                    <span>Ante Prima consultants</span>
+                    <span>Metropolis</span>
+                    <span>Flyaway+studio</span>
+                  </div>
+                  <div class="institu">
+                    <h4>INSTITUTIONAL</h4>
+                    <span>Conseil National de l’Ordre des Architectes</span>
+                    <span>Croix-Rouge française</span>
+                    <span>AP-HP (Espace éthique Île-de-France)</span>
+                    <span>IPBES</span>
+                    <span>Ligue des droits de l’Homme</span>
+                    <span>Ministère de l’Éducation Nationale</span>
+                    <span>Ville d’Houilles</span>
+                    <span>Ville de Rosny-sous-bois</span>
+                    <span>Secours Catholique</span>
+                    <span>Bibliothèque national de France</span>
+                  </div>
+                  <div class="school">
+                    <h4>SCHOOL</h4>
+                    <span>HEAR Haute École des Arts du Rhin</span>
+                    <span>ECV Paris</span>
+                    <span>Amos Sport Business School</span>
+                  </div>
+                </section>
+                <section class="second-column">
+                  <div class="publish">
+                    <h4>PUBLISHERS</h4>
+                    <span>Gallimard</span>
+                    <span>Éditions du Centre Pompidou</span>
+                    <span>Seuil / La Martinière</span>
+                    <span>Le Cherche Midi</span>
+                    <span>Éditions des Musées de Strasbourg</span>
+                    <span>Textuel</span>
+                    <span>Éditions du patrimoine</span>
+                    <span>Le Chêne</span>
+                    <span>Éditions Jalou</span>
+                    <span>AAM éditions</span>
+                    <span>Les Grandes Personnes</span>
+                    <span>Flammarion</span>
+                    <span>Le Livre de Poche</span>
+                    <span>10 / 18</span>
+                    <span>Pocket</span>
+                    <span>Éditions 303</span>
+                    <span>Eyrolles</span>
+                    <span>La Manufacture de Livres</span>
+                    <span>CREE éditions</span>
+                    <span>Skira Paris</span>
+                  </div>
+                  <div class="arch">
+                    <h4>ARCHITECTURE / DESIGN</h4>
+                    <span>Ateliers 2/3/4/</span>
+                    <span>ANMA</span>
+                    <span>Chartier Dalix</span>
+                    <span>Francis Soler Architectures</span>
+                    <span>FRST Forest & Giaconia</span>
+                    <span>Intramuros groupe</span>
+                    <span>K Architectes</span>
+                    <span>Leclercq & Associés</span>
+                    <span>Michel Guthmann Architecture Urbanisme</span>
+                    <span>Michel Péna</span>
+                    <span>Michel Rémon & Associés</span>
+                    <span>PCA Stream</span>
+                    <span>PietriArchitectes</span>
+                    <span>Philippe Dubus Architectes</span>
+                    <span>RH Plus</span>
+                    <span>Sophie Delay</span>
+                    <span>Tolila+Gilliland</span>
+                    <span>Triptyque Architecture</span>
+                    <span>Yoonseux architectes</span>
+                    <span>XXO</span>
+                  </div>
+                  <div class="land">
+                    <h4>LAND DEVELOPERS</h4>
+                    <span>Groupe Egis</span>
+                    <span>Groupe SNI</span>
+                    <span>Groupe Caisse des dépôts</span>
+                    <span>Altarea Cogedim</span>
+                    <span>Ogic</span>
+                    <span>Vinci Immobilier</span>
+                    <span>Nexity</span>
+                    <span>Paris Sud Aménagement</span>
+                    <span>CDU</span>
+                    <span>Icade</span>
+                  </div>
+                </section>
+              </section>
+              <section class="menu">
+                <h3>credits</h3>
+                <section class="creditFirst">
+                  <div>
+                    <span>Code: Julian Garnier</span>
+                    <span>Design: Zoo</span>
+                  </div>
+                  <div>
+                    <span>Photos credits:</span>
+                    <span>Zoo, Laura Bonnefous, Motoki Nakatani, Tony</span> 
+                    <span>Trichanh, Salem Mostefaoui, Célia Pernot.</span>
+                  </div>
+                </section>
+                <section class="creditSecond">
+                  <div>
+                    <span>Thanks to everyone who worked with us:</span>
+                    <span>Arthur Bonifay, Camille Bonnivard, </span>
+                    <span>Arthur Brun, Marion de Chezelles, </span>
+                    <span>Margot Lévêque, Marie Levi, Manuel Marsoudet, </span>
+                    <span>Léa Milteau, Alexandre Nghiem-Phu, </span>
+                    <span>Axel Pelletanche-Thévenart, Marine Stephan</span>
+                  </div>
+                </section>
+              </section>
+            </div>
+        </ul>    
+        <ul>    
+          <li>projects</li>
+          <li>tous</li>
+          <a>en</a>
+        </ul>  
+      </nav> 
+    </header>
+    <main>
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/400x300" />
+        <div>
+          <h4>courant verts</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x301" />
+        <div>
+          <h4>chateau decounen</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x302" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x303" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x304" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x455" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x306" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x307" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x308" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x309" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x310" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+      <article class="Block">
+        <img src="https://source.unsplash.com/random/300x311" />
+        <div>
+          <h4>moco montpellier contemporain</h4>
+        </div>
+      </article> 
+    </main>
+  </body>
+</html>
